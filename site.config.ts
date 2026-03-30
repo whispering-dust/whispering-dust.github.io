@@ -6,10 +6,10 @@ export default defineSiteConfig({
   title: '落尘の小站',
   author: {
     name: '落尘丿叶知秋',
-    avatar: 'https://whispering-dust.github.io/images/avatar.jpg',
+    avatar: '/images/avatar.jpg',
   },
   description: 'Stay hungry, stay foolish.',
-  favicon: 'https://whispering-dust.github.io/favicon.ico',
+  favicon: '/favicon.ico',
   social: [
     {
       name: 'RSS',
@@ -19,25 +19,25 @@ export default defineSiteConfig({
     },
     {
       name: 'GitHub',
-      link: 'https://github.com/YunYouJun',
+      link: 'https://github.com/whispering-dust',
       icon: 'i-ri-github-line',
       color: '#6e5494',
     },
     {
       name: '知乎',
-      link: 'https://www.zhihu.com/people/yunyoujun/',
+      link: 'https://www.zhihu.com/people/luo-chen-pie-xie-zhi-qiu',
       icon: 'i-ri-zhihu-line',
       color: '#0084FF',
     },
     {
       name: '哔哩哔哩',
-      link: 'https://space.bilibili.com/1579790',
+      link: '',
       icon: 'i-ri-bilibili-line',
       color: '#FF8EB3',
     },
     {
       name: 'E-Mail',
-      link: 'mailto:me@yunyoujun.cn',
+      link: 'mailto:mapleleaf.y@qq.com',
       icon: 'i-ri-mail-line',
       color: '#8E71C1',
     },
@@ -63,7 +63,7 @@ export default defineSiteConfig({
       },
   },
   sponsor: {
-    enable: true,
+    enable: false,
     title: '我很可爱，请给我钱！',
     methods: [
       {

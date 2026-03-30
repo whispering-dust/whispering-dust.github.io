@@ -2,6 +2,15 @@
 title: 关于站点
 ---
 
-Valaxy + valaxy-theme-yun Demo Site
+这是一个专注于大模型与 AI 技术的学习型博客，主要记录我学习大模型的过程——从困惑、理解，到逐渐形成自己的看法。
 
-- Default Theme: [valaxy-theme-yun](https://github.com/YunYouJun/valaxy/blob/main/packages/valaxy-theme-yun/)
+主要内容包括：
+
+大模型相关原理理解
+实践与踩坑记录
+工具与应用探索
+一些延伸的思考
+
+很多内容可能不完美，但都来自真实的学习经历。
+
+如果你也在这条路上，希望这些记录能给你一点参考。

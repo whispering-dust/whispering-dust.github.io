@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "doc-i18n": {
+      "source": "YunYouJun/valaxy",
+      "sourceType": "github",
+      "computedHash": "1126ceb4d5c1526a04eb9e60c2c3a78d550fcf918da7bd9e05c7c62367cfff1c"
+    },
+    "valaxy": {
+      "source": "YunYouJun/valaxy",
+      "sourceType": "github",
+      "computedHash": "841ad0ad892f0f1ce3be4d11e0b29db0cef7235cffd20ffa8cf4ad5942dc9157"
+    }
+  }
+}

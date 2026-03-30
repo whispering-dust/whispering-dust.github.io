@@ -19,6 +19,28 @@ export default defineValaxyConfig<UserThemeConfig>({
       enable: true,
       title: '落尘の小站',
     },
+
+    // 背景图（public/images/ 下的图片）
+    bg_image: {
+      enable: true,
+      url: '/images/bg.jpg',
+      dark: '/images/bg_dark.jpg',
+      opacity: 0.85,
+    },
+
+    // 自定义语录
+    // say: {
+    //   enable: true,
+    //   api: '/say.json',
+    //   hitokoto: { enable: false },
+    // },
+
+    // 公告
+    notice: {
+      enable: true,
+      content: '欢迎来到落尘の小站！',
+    },
+
     nav:[
       {
         text: '分类',
