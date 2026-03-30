@@ -31,14 +31,8 @@ export default defineSiteConfig({
       color: '#0084FF',
     },
     {
-      name: '哔哩哔哩',
-      link: '',
-      icon: 'i-ri-bilibili-line',
-      color: '#FF8EB3',
-    },
-    {
       name: 'E-Mail',
-      link: 'mailto:mapleleaf.y@qq.com',
+      link: 'mapleleaf.y@qq.com',
       icon: 'i-ri-mail-line',
       color: '#8E71C1',
     },
