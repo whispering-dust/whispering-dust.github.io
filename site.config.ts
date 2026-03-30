@@ -4,7 +4,7 @@ export default defineSiteConfig({
   url: 'https://whispering-dust.github.io/',
   lang: 'zh-CN',
   title: '落尘の小站',
-  subtitle:'一个大模型学习记录Blog',
+  subtitle:'一个大模型学习者的折腾日常',
   author: {
     name: '落尘丿叶知秋',
     avatar: '/images/avatar.jpg',
