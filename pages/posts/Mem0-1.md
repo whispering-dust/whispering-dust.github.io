@@ -10,7 +10,7 @@ tags:
 
 
 
-# 引言
+## 引言
 
 最近在折腾大模型的“记忆”能力。简单调研了一圈，发现 Mem0 的设计思路相当优雅：不仅支持自动提取，还能对记忆进行去重和融合，已经不只是“向量存储”那么简单。
 
@@ -26,11 +26,11 @@ tags:
 
 > 使用 **vLLM（Qwen3-14B 推理） + Ollama（Embedding） + Chroma（向量库）** 搭建 Mem0 本地记忆系统
 
-# 架构选型与模型部署
+## 架构选型与模型部署
 
 我自己的目标很明确：实验一个简单的流程，给本地大模型加一个“长期记忆模块”，并且确保**所有数据完全本地存储**。
 
-## 1. 对话模型：vLLM + Qwen3-14B
+### 1. 对话模型：vLLM + Qwen3-14B
 
 我这里选择用 vLLM 来部署对话模型，原因很简单：
 
@@ -48,7 +48,7 @@ tags:
 
 ------
 
-## 2. 向量模型：Ollama + nomic-embed-text
+### 2. 向量模型：Ollama + nomic-embed-text
 
 Embedding 这块，Mem0 支持很多方式，但我最终选了 Ollama：
 
@@ -73,7 +73,7 @@ curl http://localhost:11434/api/embeddings -d '{
 
 ------
 
-## 3. 向量存储：Chroma（SQLite）
+### 3. 向量存储：Chroma（SQLite）
 
 为了轻量和方便，直接用 Mem0 自带的 Chroma：
 
@@ -83,7 +83,7 @@ curl http://localhost:11434/api/embeddings -d '{
 
 ------
 
-## 4. Mem0 配置的关键点
+### 4. Mem0 配置的关键点
 
 Mem0 实际上依赖三块：
 
@@ -93,11 +93,11 @@ Mem0 实际上依赖三块：
 
 ⚠️ 如果你**不显式配置 LLM**，Mem0 默认会调用 OpenAI —— 这就是后面第一个坑。
 
-# Mem0 配置的“暗坑”
+## Mem0 配置的“暗坑”
 
 下面是整个过程中踩坑的几个点
 
-## 暗坑 1：被忽略的“记忆提取器”
+### 暗坑 1：被忽略的“记忆提取器”
 
 部署采用的全是本地模型，但一执行 `memory.add()`，直接报错缺少 OpenAI API Key。
 
@@ -120,13 +120,13 @@ Mem0 实际上依赖三块：
 }
 ```
 
-## 暗坑 2：Chroma 维度的降维打击
+### 暗坑 2：Chroma 维度的降维打击
 
 如果你像我一样，最开始用了 HuggingFace 的 `multi-qa-MiniLM` (384维)，后来中途换成了 Ollama 的 `nomic-embed-text` (768维)。程序瞬间原地爆炸，报 Dimension Mismatch。这是因为同一个 Chroma 数据库文件夹一旦初始化了维度，就锁死了。换 Embedder 必须**删掉旧的数据库文件夹**重来。
 
 
 
-# 核心代码实现 
+## 核心代码实现 
 
 下面是整理后的完整工作流代码（已踩坑验证版）。
 
@@ -265,7 +265,7 @@ if __name__ == "__main__":
 
 
 
-# 如何偷窥你的 Chroma 数据库？
+## 如何偷窥你的 Chroma 数据库？
 
 代码跑通了，但是由于我们用了 Chroma 存在本地的 `./mem0_db` 文件夹里，它是一堆 SQLite 和二进制文件，因此看不到底层数据
 
@@ -286,7 +286,7 @@ if all_memories and "results" in all_memories:
 
 ![image-20260401140055317](https://files.seeusercontent.com/2026/04/01/Uu5k/image-20260401140055317.png)
 
-# 总结
+## 总结
 
 关于“何时存、何时取”，一直是 Memory 系统中的核心问题之一。本次实验更多是一次“跑通链路”的实践记录，整体设计仍然偏向简单和直观，距离一个完善的记忆系统还有不小的提升空间。
 
