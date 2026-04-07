@@ -12,12 +12,12 @@ export default defineSiteConfig({
   description: 'Stay hungry, stay foolish.',
   favicon: '/favicon.ico',
   social: [
-    {
-      name: 'RSS',
-      link: '/atom.xml',
-      icon: 'i-ri-rss-line',
-      color: 'orange',
-    },
+    // {
+    //   name: 'RSS',
+    //   link: '/atom.xml',
+    //   icon: 'i-ri-rss-line',
+    //   color: 'orange',
+    // },
     {
       name: 'GitHub',
       link: 'https://github.com/whispering-dust',
@@ -32,7 +32,7 @@ export default defineSiteConfig({
     },
     {
       name: 'E-Mail',
-      link: 'mapleleaf.y@qq.com',
+      link: 'mailto:mapleleaf.y@qq.com',
       icon: 'i-ri-mail-line',
       color: '#8E71C1',
     },
