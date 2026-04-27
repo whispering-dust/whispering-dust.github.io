@@ -1,0 +1,86 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "落尘の小站",
+    "home_page_url": "https://whispering-dust.github.io/",
+    "feed_url": "https://whispering-dust.github.io/feed.json",
+    "description": "Stay hungry, stay foolish.",
+    "icon": "https://whispering-dust.github.io/images/avatar.jpg",
+    "author": {
+        "name": "落尘丿叶知秋",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "https://whispering-dust.github.io/posts/20260427-MemoryReadingNote",
+            "content_html": "<blockquote>\n<p>[「纯干货」几万字都讲不明白的Memory架构与思考](<a href=\"https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&amp;mid=2247559363&amp;idx=\">https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&amp;mid=2247559363&amp;idx=</a></p>\n</blockquote>\n<br/><p>访问 <a href=\"https://whispering-dust.github.io/posts/20260427-MemoryReadingNote\" target=\"_blank\">https://whispering-dust.github.io/posts/20260427-MemoryReadingNote</a> 阅读全文。</p>",
+            "url": "https://whispering-dust.github.io/posts/20260427-MemoryReadingNote",
+            "title": "Memory博客阅读笔记",
+            "date_modified": "2026-04-27T00:00:00.000Z",
+            "date_published": "2026-04-27T00:00:00.000Z",
+            "author": {
+                "name": "落尘丿叶知秋",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "https://whispering-dust.github.io/posts/20260427-thinking",
+            "content_html": "<p>在前几篇博客之后，大概过了小几个星期，终于憋出了新的博客，但是我却明显感觉到了不对。博客的初衷是想记录我自己思考的过程，以及一些实验的过程和收获，但是在这一篇博客撰写的时候，一方面我花费了大量的时间</p>\n<br/><p>访问 <a href=\"https://whispering-dust.github.io/posts/20260427-thinking\" target=\"_blank\">https://whispering-dust.github.io/posts/20260427-thinking</a> 阅读全文。</p>",
+            "url": "https://whispering-dust.github.io/posts/20260427-thinking",
+            "title": "一些关于写博客的思考",
+            "date_modified": "2026-04-27T00:00:00.000Z",
+            "date_published": "2026-04-27T00:00:00.000Z",
+            "author": {
+                "name": "落尘丿叶知秋",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "https://whispering-dust.github.io/posts/20260403-MemFactory-1",
+            "content_html": "<p>最近一直在研究用RL去训练LLM的Memory能力，也计划复现一些文章看看效果，恰好找到一个叫 MemFactory 的框架，它是一个用强化学习（GRPO）训练 LLM 记忆处理能力的框架，并</p>\n<br/><p>访问 <a href=\"https://whispering-dust.github.io/posts/20260403-MemFactory-1\" target=\"_blank\">https://whispering-dust.github.io/posts/20260403-MemFactory-1</a> 阅读全文。</p>",
+            "url": "https://whispering-dust.github.io/posts/20260403-MemFactory-1",
+            "title": "MemFactory 框架探索笔记",
+            "date_modified": "2026-04-03T00:00:00.000Z",
+            "date_published": "2026-04-03T00:00:00.000Z",
+            "author": {
+                "name": "落尘丿叶知秋",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "https://whispering-dust.github.io/posts/20260403-train_speedup",
+            "content_html": "<p>在跑 MemFactory 训练的过程中，发现 rollout 阶段非常慢，追查下来是 attention 实现的问题。这里记录一下排查过程和最终解决方案。</p>\n<hr>\n<h2>1. 问题发</h2>\n<br/><p>访问 <a href=\"https://whispering-dust.github.io/posts/20260403-train_speedup\" target=\"_blank\">https://whispering-dust.github.io/posts/20260403-train_speedup</a> 阅读全文。</p>",
+            "url": "https://whispering-dust.github.io/posts/20260403-train_speedup",
+            "title": "训练加速探索：记一次DEBUG和加速原理的总结",
+            "date_modified": "2026-04-03T00:00:00.000Z",
+            "date_published": "2026-04-03T00:00:00.000Z",
+            "author": {
+                "name": "落尘丿叶知秋",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "https://whispering-dust.github.io/posts/20260401-Mem0-1",
+            "content_html": "<h2>引言</h2>\n<p>最近在折腾大模型的“记忆”能力。简单调研了一圈，发现 Mem0 的设计思路相当优雅：不仅支持自动提取，还能对记忆进行去重和融合，已经不只是“向量存储”那么简单。</p>\n<p>不</p>\n<br/><p>访问 <a href=\"https://whispering-dust.github.io/posts/20260401-Mem0-1\" target=\"_blank\">https://whispering-dust.github.io/posts/20260401-Mem0-1</a> 阅读全文。</p>",
+            "url": "https://whispering-dust.github.io/posts/20260401-Mem0-1",
+            "title": "Mem0工作流踩坑记录",
+            "date_modified": "2026-04-01T00:00:00.000Z",
+            "date_published": "2026-04-01T00:00:00.000Z",
+            "author": {
+                "name": "落尘丿叶知秋",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "https://whispering-dust.github.io/posts/my-first-post",
+            "content_html": "<p>AI 时代的发展速度确实有点超出预期。回想起来，我最早是在 2022 年开始尝试搭建博客的。那时候大模型还没有真正流行起来，我也一直觉得，AI 距离替代人类完成编程还有不小的距离。当时的想法也很简</p>\n<br/><p>访问 <a href=\"https://whispering-dust.github.io/posts/my-first-post\" target=\"_blank\">https://whispering-dust.github.io/posts/my-first-post</a> 阅读全文。</p>",
+            "url": "https://whispering-dust.github.io/posts/my-first-post",
+            "title": "一个新的开始",
+            "date_modified": "2026-03-30T00:00:00.000Z",
+            "date_published": "2026-03-30T00:00:00.000Z",
+            "author": {
+                "name": "落尘丿叶知秋",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}

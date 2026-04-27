@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>落尘の小站</title>
+        <link>https://whispering-dust.github.io/</link>
+        <description>Stay hungry, stay foolish.</description>
+        <lastBuildDate>Mon, 27 Apr 2026 16:01:01 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>落尘の小站</title>
+            <url>https://whispering-dust.github.io/images/avatar.jpg</url>
+            <link>https://whispering-dust.github.io/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2026 © 落尘丿叶知秋</copyright>
+        <atom:link href="https://whispering-dust.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Memory博客阅读笔记]]></title>
+            <link>https://whispering-dust.github.io/posts/20260427-MemoryReadingNote</link>
+            <guid isPermaLink="false">https://whispering-dust.github.io/posts/20260427-MemoryReadingNote</guid>
+            <pubDate>Mon, 27 Apr 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>[「纯干货」几万字都讲不明白的Memory架构与思考](<a href="https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&amp;mid=2247559363&amp;idx=">https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&amp;mid=2247559363&amp;idx=</a></p>
+</blockquote>
+<br/><p>访问 <a href="https://whispering-dust.github.io/posts/20260427-MemoryReadingNote" target="_blank">https://whispering-dust.github.io/posts/20260427-MemoryReadingNote</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (落尘丿叶知秋)</author>
+        </item>
+        <item>
+            <title><![CDATA[一些关于写博客的思考]]></title>
+            <link>https://whispering-dust.github.io/posts/20260427-thinking</link>
+            <guid isPermaLink="false">https://whispering-dust.github.io/posts/20260427-thinking</guid>
+            <pubDate>Mon, 27 Apr 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>在前几篇博客之后，大概过了小几个星期，终于憋出了新的博客，但是我却明显感觉到了不对。博客的初衷是想记录我自己思考的过程，以及一些实验的过程和收获，但是在这一篇博客撰写的时候，一方面我花费了大量的时间</p>
+<br/><p>访问 <a href="https://whispering-dust.github.io/posts/20260427-thinking" target="_blank">https://whispering-dust.github.io/posts/20260427-thinking</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (落尘丿叶知秋)</author>
+        </item>
+        <item>
+            <title><![CDATA[MemFactory 框架探索笔记]]></title>
+            <link>https://whispering-dust.github.io/posts/20260403-MemFactory-1</link>
+            <guid isPermaLink="false">https://whispering-dust.github.io/posts/20260403-MemFactory-1</guid>
+            <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>最近一直在研究用RL去训练LLM的Memory能力，也计划复现一些文章看看效果，恰好找到一个叫 MemFactory 的框架，它是一个用强化学习（GRPO）训练 LLM 记忆处理能力的框架，并</p>
+<br/><p>访问 <a href="https://whispering-dust.github.io/posts/20260403-MemFactory-1" target="_blank">https://whispering-dust.github.io/posts/20260403-MemFactory-1</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (落尘丿叶知秋)</author>
+        </item>
+        <item>
+            <title><![CDATA[训练加速探索：记一次DEBUG和加速原理的总结]]></title>
+            <link>https://whispering-dust.github.io/posts/20260403-train_speedup</link>
+            <guid isPermaLink="false">https://whispering-dust.github.io/posts/20260403-train_speedup</guid>
+            <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>在跑 MemFactory 训练的过程中，发现 rollout 阶段非常慢，追查下来是 attention 实现的问题。这里记录一下排查过程和最终解决方案。</p>
+<hr>
+<h2>1. 问题发</h2>
+<br/><p>访问 <a href="https://whispering-dust.github.io/posts/20260403-train_speedup" target="_blank">https://whispering-dust.github.io/posts/20260403-train_speedup</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (落尘丿叶知秋)</author>
+        </item>
+        <item>
+            <title><![CDATA[Mem0工作流踩坑记录]]></title>
+            <link>https://whispering-dust.github.io/posts/20260401-Mem0-1</link>
+            <guid isPermaLink="false">https://whispering-dust.github.io/posts/20260401-Mem0-1</guid>
+            <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>引言</h2>
+<p>最近在折腾大模型的“记忆”能力。简单调研了一圈，发现 Mem0 的设计思路相当优雅：不仅支持自动提取，还能对记忆进行去重和融合，已经不只是“向量存储”那么简单。</p>
+<p>不</p>
+<br/><p>访问 <a href="https://whispering-dust.github.io/posts/20260401-Mem0-1" target="_blank">https://whispering-dust.github.io/posts/20260401-Mem0-1</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (落尘丿叶知秋)</author>
+        </item>
+        <item>
+            <title><![CDATA[一个新的开始]]></title>
+            <link>https://whispering-dust.github.io/posts/my-first-post</link>
+            <guid isPermaLink="false">https://whispering-dust.github.io/posts/my-first-post</guid>
+            <pubDate>Mon, 30 Mar 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>AI 时代的发展速度确实有点超出预期。回想起来，我最早是在 2022 年开始尝试搭建博客的。那时候大模型还没有真正流行起来，我也一直觉得，AI 距离替代人类完成编程还有不小的距离。当时的想法也很简</p>
+<br/><p>访问 <a href="https://whispering-dust.github.io/posts/my-first-post" target="_blank">https://whispering-dust.github.io/posts/my-first-post</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (落尘丿叶知秋)</author>
+        </item>
+    </channel>
+</rss>
