@@ -1,5 +1,5 @@
 ---
-title: 智能体记忆的流派、共识与未解之谜
+title: 智能体记忆的现在与未来————Elastic 中国 AI 搜索技术大会观后感
 date: 2026-05-12
 categories: 学习笔记
 tags:
